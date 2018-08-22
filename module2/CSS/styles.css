@@ -1,1 +1,102 @@
-CSS
+*{
+	font-family: Georgia;
+	box-sizing: border-box;
+	
+}
+h1 {
+	margin-bottom: 20px;
+	color: blue;
+	text-align: center;
+
+}
+
+.row div {
+	border: 2px solid black;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+#p1{
+	background-color: #80ffd4;
+	height: 280px;
+	float:left;
+	margin-right: 5px;
+	padding:100px 10px 10px 10px;
+	text-align: left;
+	position: relative;
+
+
+}
+#p2 {
+	background-color: #00e699;
+	height: 280px;
+	margin-right: 5px;
+
+	float:left;
+	padding:100px 10px 10px 10px;
+	position: relative;
+
+	text-align: left;
+
+}
+#p3 {
+	float:left;
+	background-color: #009966;
+	margin-right: 5px;
+	position: relative;
+	height: 280px;
+	padding:100px 10px 10px 10px;
+	text-align: left;
+
+}
+/* Simple Responsive Framework. */
+.row {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow:auto;
+
+}
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  
+  .col-lg-4 {
+    width: calc(33.33% - 5px);
+  }
+
+}
+/********** Medium devices **********/
+@media (min-width: 992px) and (max-width: 1199px){
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+
+  }
+  .col-md-6 {
+    width: calc(50% - 5px);
+  }
+}
+ /********** Small devices  **********/ 
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+		float: left;
+	}
+  .col-sm-12 {
+    width: calc(100% - 5px);
+  }
+} 
+
+.box_title{
+	position:absolute;
+	top:0px;
+	right:0px;
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
+	padding:3px;
+	font-size: 25px ;
+	font-weight: bold;
+
+}
+ 
+
