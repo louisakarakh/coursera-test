@@ -1,6 +1,5 @@
 body {
   font-size: 20px;
-  color: #fff;
   background-color: #FFC300;
   font-family: 'Raleway', sans-serif;
 }
@@ -20,7 +19,7 @@ body {
 
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Raleway', sans-serif;
-  color: #E0CCB4;
+  color: #Eee;
   font-size: 2em;
   text-transform: uppercase;
   font-weight: bold;
@@ -37,7 +36,7 @@ body {
   margin-top: 10px;
 }
 #nav-list a {
-  color: #E0CCB4;
+  color: #Eee;
   text-align: center;
 }
 
@@ -59,8 +58,14 @@ body {
 
 
   /********** Large devices only **********/
-@media (min-width: 1200px) {
 
+@media (min-width: 1200px) {
+  .container-fluid .jumbotron {
+    background:  no-repeat;
+    height: 675px;
+    width: 100%;
+    margin: 20px;
+  }
 }
 
 /********** Medium devices only **********/
@@ -95,11 +100,30 @@ body {
 
   /* End Header */
 
-.row {
-  margin-bottom: 15px;
-  color: #E87C64;
+#main-content .container-fluid .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+  width: 100%;
+  float: left;
+  text-align: center;
+  position: relative;
+  text-align: justify-all;
+  background-color: #FFC300;
 }
-.row > div {
-  border: 2px solid red;
-  background-color: gray;
+
+#main-content .container-fluid .jumbotron p .text-center  {
+    position: absolute;
+    top:0px;
+  right:0px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  padding:3px;
+  font-size: 25px ;
+  font-weight: bold;
+}
+
+
+
+
+
 }  
